@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>body{font-size: 20px;}</style>
+    <meta charset="UTF-8">
+    <title>Знаки зодиака</title>
+</head>
+<body>
+    <h1>Приложение Гороскоп</h1>
+    {{list|safe}}
+
+    <h2>Или введите месяц и день рождения</h2>
+    <form action="/info_by_date">
+        <input type="text" name="month" />
+        <input type="text" name="day" />
+        <input type="submit" />
+    </form>
+</body>
+</html>

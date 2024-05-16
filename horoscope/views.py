@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.urls import reverse
-from django.template.loader import render_to_string
 
 zodiac_dict = {
     'aries': {
@@ -74,10 +73,6 @@ def index(request):
     <ol>
         {li_elements}
     </ol>
-    '''
-
-    form = f'''
-
     '''
 
     data = {
